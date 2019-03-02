@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700|Open+Sans" rel="stylesheet">
+  <!-- LINK TO CUSTOM STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hangman Game</title>
+</head>
+
+<body>
+
+  <!-- CREATE JUMBOTRON TO HOLD APP TITLE AND INFO -->
+  <div class="jumbotron jumbotron-fluid text-center text-dark media-background">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wDnGoucD9KY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+    <h1 class="display-4">Welcome! Everything is fine!</h1>
+    <p class="lead">Press "New Game" below to start a new game!</p>
+    <hr class="my-4">
+    <button class="btn btn-outline-danger btn-lg" role="button" id="new-game">New Game</button>
+
+  </div>
+
+  <!-- MAIN BODY SECTION -->
+  <div class="container-fluid">
+    <!-- make row to hold columns -->
+    <div class="row">
+      <!-- left hand column -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <!-- section to hold game stats -->
+        <div class="card">
+          <h5 class="card-header bg-dark text-light">
+            Game Stats
+          </h5>
+          <div class="card-body">
+            <strong>Wins: </strong> <span id="wins-count"></span><br />
+            <strong>Losses: </strong> <span id="losses-count"></span><br />
+            <strong>Guesses Left: </strong> <span id="guesses-left"></span><br />
+          </div>
+        </div>
+      </div>
+
+      <!-- right hand column -->
+      <div class="col-12 col-sm-6 col-md-8 mb-4">
+        <!-- Hold onto active game info (placeholders and letters guessed) -->
+        <div class="card">
+          <h5 class="card-header bg-dark text-light">
+            Current Game Info
+          </h5>
+          <div class="card-body text-center">
+            <h5>Current Word: <span id="placeholders"></span></h5>
+            <h5>Incorrect Letters Guessed: <span id="incorrect-letters"></span></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <!-- LINK TO CUSTOM JAVASCRIPT -->
+  <script src="Assets/Javascript/game.js"></script>
+  <script src="Assets/Javascript/wordbank.js"></script>
+</body>
+
+</html>
