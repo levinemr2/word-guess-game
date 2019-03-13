@@ -1,1 +1,0 @@
-var wordBank = ["Find Chidi", "Eleanor", "Jortles", "The Good Place", "Janet",]

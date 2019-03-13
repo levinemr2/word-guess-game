@@ -1,0 +1,47 @@
+body {
+    color: #0555a7;
+    background-color: #92c6ea;
+}
+
+.background {
+    background-color: #92c6ea;
+    background-image: url("https://wallpapersite.com/images/pages/pic_h/9830.jpg");
+    color: antiquewhite;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-size: cover;
+}
+
+#new-game-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    background-color: #92c6ea;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0555a7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px #5f5f5e;
+}
+
+#new-game-button:hover {
+box-shadow: 0 4px #5f5f5e;
+top:2px;
+}
+
+#new-game-button:active {
+    box-shadow: 0 0 #5f5f5e;
+    top:6px;
+}
+
+#placeholder-section {
+    background-color: #0483fb;
+    color: #92c6ea;
+}
+
+#placeholders {
+    letter-spacing: 7px;
+}
